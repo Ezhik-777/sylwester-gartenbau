@@ -1,0 +1,329 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sky gradient - furthest layer */
+.skyLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        #87CEEB 0%,
+        #B0E0E6 30%,
+        #E0F4FF 60%,
+        transparent 100%
+    );
+    z-index: -1;
+}
+
+/* Main background image */
+.backgroundLayer {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    z-index: 0;
+    will-change: transform;
+}
+
+/* Decorative organic shapes */
+.middleLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    will-change: transform, opacity;
+}
+
+.organicShape1 {
+    position: absolute;
+    top: 10%;
+    right: -5%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(44, 94, 64, 0.15) 0%, transparent 70%);
+    border-radius: 60% 40% 70% 30% / 60% 30% 70% 40%;
+    filter: blur(40px);
+}
+
+.organicShape2 {
+    position: absolute;
+    bottom: 20%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(210, 180, 140, 0.2) 0%, transparent 70%);
+    border-radius: 40% 60% 30% 70% / 40% 70% 30% 60%;
+    filter: blur(50px);
+}
+
+/* Gradient overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0.3) 40%,
+        rgba(26, 71, 42, 0.5) 100%
+    );
+    z-index: 2;
+    will-change: opacity;
+}
+
+/* Foreground decorative leaves */
+.foregroundLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    pointer-events: none;
+    will-change: transform, opacity;
+}
+
+.leaf1, .leaf2, .leaf3 {
+    position: absolute;
+    filter: blur(2px);
+}
+
+.leaf1 {
+    top: 15%;
+    left: 5%;
+    width: 60px;
+    height: 80px;
+    background: linear-gradient(135deg, rgba(44, 94, 64, 0.4) 0%, rgba(26, 71, 42, 0.2) 100%);
+    border-radius: 80% 0 80% 0;
+    transform: rotate(-30deg);
+}
+
+.leaf2 {
+    top: 25%;
+    right: 10%;
+    width: 50px;
+    height: 70px;
+    background: linear-gradient(135deg, rgba(61, 122, 82, 0.35) 0%, rgba(44, 94, 64, 0.15) 100%);
+    border-radius: 0 80% 0 80%;
+    transform: rotate(45deg);
+}
+
+.leaf3 {
+    bottom: 30%;
+    left: 8%;
+    width: 45px;
+    height: 60px;
+    background: linear-gradient(135deg, rgba(74, 138, 95, 0.3) 0%, rgba(44, 94, 64, 0.1) 100%);
+    border-radius: 80% 0 80% 0;
+    transform: rotate(15deg);
+}
+
+/* Content */
+.content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: var(--color-white);
+    padding: 0 var(--spacing-md);
+    max-width: 900px;
+    will-change: transform, opacity;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: 0.5px;
+}
+
+.content h1 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 700;
+    line-height: 1.05;
+    margin-bottom: var(--spacing-xs);
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+    margin-bottom: var(--spacing-md);
+    opacity: 0.95;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.location {
+    display: block;
+    font-size: 0.9em;
+    opacity: 0.85;
+    margin-top: 4px;
+}
+
+/* CTA Buttons */
+.ctaGroup {
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ctaPrimary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
+    background: var(--color-forest);
+    color: var(--color-white);
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(26, 71, 42, 0.4);
+}
+
+.ctaPrimary:hover {
+    background: var(--color-forest-light);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(26, 71, 42, 0.5);
+}
+
+.ctaPrimary svg {
+    transition: transform 0.3s ease;
+}
+
+.ctaPrimary:hover svg {
+    transform: translateX(4px);
+}
+
+.ctaSecondary {
+    display: inline-flex;
+    align-items: center;
+    padding: 16px 32px;
+    background: transparent;
+    color: var(--color-white);
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    text-decoration: none;
+    backdrop-filter: blur(4px);
+}
+
+.ctaSecondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Scroll Indicator */
+.scrollIndicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+.scrollMouse {
+    width: 24px;
+    height: 38px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
+}
+
+.scrollWheel {
+    width: 4px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 100svh;
+    }
+
+    .badge {
+        font-size: 0.8rem;
+        padding: 6px 16px;
+    }
+
+    .ctaGroup {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ctaPrimary,
+    .ctaSecondary {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+
+    .organicShape1,
+    .organicShape2 {
+        display: none;
+    }
+
+    .leaf1,
+    .leaf2,
+    .leaf3 {
+        opacity: 0.5;
+    }
+
+    .scrollIndicator {
+        bottom: 20px;
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .backgroundLayer,
+    .middleLayer,
+    .foregroundLayer,
+    .overlay,
+    .content {
+        will-change: auto;
+    }
+}

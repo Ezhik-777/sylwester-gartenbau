@@ -1,0 +1,116 @@
+.page {
+    min-height: 100vh;
+    padding: calc(var(--header-height) + var(--spacing-lg)) var(--spacing-md) var(--spacing-xl);
+    background-color: #F5F5F0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.backLink {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    color: var(--color-forest);
+    font-weight: 500;
+    margin-bottom: var(--spacing-lg);
+    transition: opacity 0.2s;
+}
+
+.backLink:hover {
+    opacity: 0.7;
+}
+
+.page h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--color-forest);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.2;
+}
+
+.section {
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.section:last-of-type {
+    border-bottom: none;
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    color: var(--color-forest);
+    margin-bottom: var(--spacing-md);
+}
+
+.section h3 {
+    font-size: 1.15rem;
+    color: var(--text-main);
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.section p {
+    color: var(--text-main);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-sm);
+    opacity: 0.9;
+}
+
+.section a {
+    color: var(--color-forest);
+    text-decoration: underline;
+}
+
+.section a:hover {
+    text-decoration: none;
+}
+
+.section ul,
+.section ol {
+    margin: var(--spacing-sm) 0;
+    padding-left: var(--spacing-md);
+}
+
+.section li {
+    line-height: 1.8;
+    margin-bottom: var(--spacing-xs);
+    opacity: 0.9;
+    list-style: disc;
+}
+
+/* Feature list for accessibility page */
+.featureList {
+    list-style: none;
+    padding-left: 0;
+}
+
+.featureList li {
+    list-style: none;
+    padding: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    background: rgba(26, 71, 42, 0.05);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--color-forest);
+}
+
+.featureList li strong {
+    color: var(--color-forest);
+}
+
+.lastUpdated {
+    margin-top: var(--spacing-lg);
+    font-size: 0.9rem;
+    color: var(--color-slate-80);
+    opacity: 0.7;
+}
+
+@media (min-width: 768px) {
+    .page {
+        padding-left: var(--spacing-lg);
+        padding-right: var(--spacing-lg);
+    }
+}

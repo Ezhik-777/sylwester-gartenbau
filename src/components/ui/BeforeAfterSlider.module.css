@@ -1,0 +1,174 @@
+.container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    cursor: ew-resize;
+    user-select: none;
+    touch-action: pan-y pinch-zoom;
+    box-shadow: var(--shadow-lg);
+}
+
+.container:focus {
+    outline: 3px solid var(--color-beige);
+    outline-offset: 3px;
+}
+
+.imageWrapper,
+.beforeWrapper {
+    position: absolute;
+    inset: 0;
+}
+
+.image {
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.beforeWrapper {
+    z-index: 2;
+}
+
+/* Labels */
+.label {
+    position: absolute;
+    bottom: 16px;
+    padding: 8px 16px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: var(--radius-full);
+    z-index: 3;
+}
+
+.beforeLabel {
+    left: 16px;
+}
+
+.afterLabel {
+    right: 16px;
+}
+
+/* Slider */
+.slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    transform: translateX(-50%);
+    z-index: 10;
+    cursor: ew-resize;
+}
+
+.sliderLine {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    transform: translateX(-50%);
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.sliderHandle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sliderHandle svg {
+    width: 18px;
+    height: 18px;
+    color: var(--color-forest);
+}
+
+.sliderHandle svg:first-child {
+    margin-right: -4px;
+}
+
+.sliderHandle svg:last-child {
+    margin-left: -4px;
+}
+
+.slider:hover .sliderHandle,
+.dragging .sliderHandle {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Instructions */
+.instructions {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 20px;
+    background: rgba(26, 71, 42, 0.9);
+    backdrop-filter: blur(8px);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: var(--radius-full);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.container:hover .instructions,
+.container:focus .instructions {
+    opacity: 0;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .container {
+        aspect-ratio: 4 / 3;
+        border-radius: var(--radius-md);
+    }
+
+    .label {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+        bottom: 12px;
+    }
+
+    .beforeLabel {
+        left: 12px;
+    }
+
+    .afterLabel {
+        right: 12px;
+    }
+
+    .sliderHandle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .sliderHandle svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .instructions {
+        font-size: 0.7rem;
+        padding: 6px 14px;
+    }
+}

@@ -1,0 +1,305 @@
+
+==============================================================================
+                              HEADER (oben fixiert)
+==============================================================================
+
++----------------------------------------------------------------------------+
+|  [LOGO] Sylwester Hulboj    Home | Leistungen | Projekte | Uber uns | Kontakt|
++----------------------------------------------------------------------------+
+                                    |
+                     (Hamburger-Menu auf Mobilgeraten)
+
+
+==============================================================================
+                            HERO SEKTION (Startseite)
+==============================================================================
+
++----------------------------------------------------------------------------+
+|                                                                            |
+|     .-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-.          |
+|    |                                                             |         |
+|    |            [HERO HINTERGRUNDBILD - hero-bg.jpg]             |         |
+|    |                   Parallax-Effekt beim Scrollen             |         |
+|    |                                                             |         |
+|    |   +-----------------------------------------------------+   |         |
+|    |   |                                                     |   |         |
+|    |   |        "Ihr Partner fur Garten & Haus"              |   |         |
+|    |   |                                                     |   |         |
+|    |   |           SYLWESTER HULBOJ                          |   |         |
+|    |   |                                                     |   |         |
+|    |   |    Professioneller Garten- & Hausmeisterservice     |   |         |
+|    |   |           in Remseck am Neckar                      |   |         |
+|    |   |                                                     |   |         |
+|    |   |   [Kostenloses Angebot ->]  [Leistungen entdecken]  |   |         |
+|    |   |                                                     |   |         |
+|    |   +-----------------------------------------------------+   |         |
+|    |                                                             |         |
+|     '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'            |
+|                                                                            |
+|                             [ Scrollen ]                                   |
+|                                  |                                         |
+|                                  v                                         |
++----------------------------------------------------------------------------+
+
+
+==============================================================================
+                        LEISTUNGEN SEKTION (#services)
+==============================================================================
+
++----------------------------------------------------------------------------+
+|                            "Was wir bieten"                                |
+|                          UNSERE LEISTUNGEN                                 |
+|                                                                            |
+|      Kompetenz in jedem Detail. Entdecken Sie unser umfassendes            |
+|           Angebot fur Ihren perfekten Aussenbereich.                       |
++----------------------------------------------------------------------------+
+
+KARTE 1 - Pflasterarbeiten (Sticky-Scroll-Effekt)
++----------------------------------------------------------------------------+
+|  01  [=]  PFLASTERARBEITEN                                                 |
+|           |                                                                |
+|  Hochwertige Pflasterungen fur        +----------------------------+       |
+|  Einfahrten, Wege und Terrassen.     |                            |        |
+|  Wir arbeiten mit Naturstein         |    [Bildplatzhalter]       |        |
+|  und Betonstein.                     |                            |        |
+|                                      |                            |        |
+|  [x] Einfahrten & Wege               +----------------------------+        |
+|  [x] Terrassenbau                                                          |
+|  [x] Natursteinverlegung                                                   |
+|  [x] Reparatur & Sanierung                                                 |
+|                                                                            |
+|              [Anfrage stellen ->]                                          |
++----------------------------------------------------------------------------+
+
+KARTE 2 - Gartengestaltung
++----------------------------------------------------------------------------+
+|  02  [*]  GARTENGESTALTUNG                                                 |
+|           |                                                                |
+|  Individuelle Planung und             +----------------------------+       |
+|  Neuanlage Ihres Traumgartens.       |                            |        |
+|  Von der Skizze bis zur              |    [Bildplatzhalter]       |        |
+|  Bepflanzung.                        |                            |        |
+|                                      |                            |        |
+|  [x] Konzeption & Planung            +----------------------------+        |
+|  [x] Rollrasen & Pflanzung                                                 |
+|  [x] Beetgestaltung                                                        |
+|  [x] Lichtkonzepte                                                         |
+|                                                                            |
+|              [Anfrage stellen ->]                                          |
++----------------------------------------------------------------------------+
+
+KARTE 3 - Zaun & Sichtschutz
++----------------------------------------------------------------------------+
+|  03  [#]  ZAUN & SICHTSCHUTZ                                               |
+|           |                                                                |
+|  Privatsphare und Sicherheit          +----------------------------+       |
+|  mit stilvollen Zaunsystemen         |                            |        |
+|  und Sichtschutzlosungen.            |    [Bildplatzhalter]       |        |
+|                                      |                            |        |
+|  [x] Holzzaune                       +----------------------------+        |
+|  [x] Doppelstabmatten                                                      |
+|  [x] Gabionen                                                              |
+|  [x] Heckenpflanzung                                                       |
+|                                                                            |
+|              [Anfrage stellen ->]                                          |
++----------------------------------------------------------------------------+
+
+KARTE 4 - Gartenpflege (dunkler Hintergrund)
++----------------------------------------------------------------------------+
+|  04  [o]  GARTENPFLEGE                          (Dunkles Design)           |
+|           |                                                                |
+|  Professionelle Pflege,               +----------------------------+       |
+|  damit Ihr Garten das ganze          |                            |        |
+|  Jahr uber strahlt.                  |    [Bildplatzhalter]       |        |
+|                                      |                            |        |
+|  [x] Rasenschnitt & Vertikutieren    +----------------------------+        |
+|  [x] Hecke schneiden                                                       |
+|  [x] Baumpflege                                                            |
+|  [x] Saisonpflege                                                          |
+|                                                                            |
+|              [Anfrage stellen ->]                                          |
++----------------------------------------------------------------------------+
+
+
+==============================================================================
+                         PORTFOLIO SEKTION (#projects)
+==============================================================================
+
++----------------------------------------------------------------------------+
+|                              "Portfolio"                                   |
+|                           UNSERE PROJEKTE                                  |
+|                                                                            |
+|     Entdecken Sie eine Auswahl unserer realisierten Gartenprojekte         |
+|                    und lassen Sie sich inspirieren.                        |
+|                                                                            |
+|         [Alle] [Pflaster] [Garten] [Zaun] [Pflege]  <- Filter              |
++----------------------------------------------------------------------------+
+
+PROJEKTGALERIE (6 Projekte mit Hover-Effekt)
++------------------------+  +------------------------+  +------------------------+
+|                        |  |                        |  |                        |
+|  [project-pflaster-1]  |  |  [project-garten-1]    |  |  [project-zaun-1]      |
+|                        |  |                        |  |                        |
+|  "Moderne Terrasse"    |  |  "Gartenparadies"      |  |  "Eleganter            |
+|   Pflaster             |  |   Garten               |  |   Sichtschutz"         |
+|   Natursteinpflaster   |  |   Geschwungener Weg    |  |   Zaun                 |
+|   mit LED-Beleuchtung  |  |   mit Beetbepflanzung  |  |   Sichtschutzzaun      |
+|                        |  |                        |  |   aus Larchenholz      |
++------------------------+  +------------------------+  +------------------------+
+
++------------------------+  +------------------------+  +------------------------+
+|                        |  |                        |  |                        |
+|  [project-pflaster-2]  |  |  [project-garten-2]    |  |  [project-pflege-1]    |
+|                        |  |                        |  |                        |
+|  "Einfahrt Sanierung"  |  |  "Grune Oase"          |  |  "Rasenpflege"         |
+|   Pflaster             |  |   Garten               |  |   Pflege               |
+|   Komplette            |  |   Zen-Garten mit       |  |   Regelmassige         |
+|   Neugestaltung        |  |   Wasserelement        |  |   Gartenpflege         |
++------------------------+  +------------------------+  +------------------------+
+
+
+VORHER/NACHHER SEKTION
++----------------------------------------------------------------------------+
+|                           "Transformation"                                 |
+|                          VORHER / NACHHER                                  |
+|                                                                            |
+|        Ziehen Sie den Regler, um die Transformation zu sehen               |
++----------------------------------------------------------------------------+
+
++------------------------+  +------------------------+  +------------------------+
+|      VORHER | NACHHER  |  |      VORHER | NACHHER  |  |      VORHER | NACHHER  |
+|  <----[===|===]---->   |  |  <----[===|===]---->   |  |  <----[===|===]---->   |
+|  (Schieberegler)       |  |  (Schieberegler)       |  |  (Schieberegler)       |
+|                        |  |                        |  |                        |
+|  "Gartenumgestaltung"  |  |  "Pflasterarbeiten     |  |  "Zaunbau &            |
+|                        |  |   Einfahrt"            |  |   Bepflanzung"         |
++------------------------+  +------------------------+  +------------------------+
+
+
+==============================================================================
+                          UBER UNS SEKTION (#about)
+==============================================================================
+
++----------------------------------------------------------------------------+
+|                              "Uber uns"                                    |
+|           Ihr Experte fur GARTENTRAUME                                     |
+|                                                                            |
+|  Sylwester Hulboj steht fur Qualitat, Zuverlassigkeit und kreative         |
+|  Losungen im Garten- und Hausmeisterservice. Mit Leidenschaft und          |
+|  Erfahrung verwandeln wir Aussenbereiche in Wohlfuhloasen.                 |
++----------------------------------------------------------------------------+
+
+STATISTIK-KARTEN (animierte Zahler)
++----------------------+  +----------------------+  +----------------------+
+|                      |  |                      |  |                      |
+|        10+           |  |       200+           |  |       100%           |
+|   Jahre Erfahrung    |  |      Projekte        |  |    Zufriedenheit     |
+|                      |  |                      |  |                      |
++----------------------+  +----------------------+  +----------------------+
+
+FEATURE-KARTEN
++----------------------+  +----------------------+  +----------------------+
+|                      |  |                      |  |                      |
+|  [Schild-Icon]       |  |  [Uhr-Icon]          |  |  [Personen-Icon]     |
+|                      |  |                      |  |                      |
+| QUALITATSGARANTIE    |  |   PUNKTLICHKEIT      |  | PERSONLICHE BERATUNG |
+|                      |  |                      |  |                      |
+| Hochwertige          |  | Zuverlassige         |  | Individuelle         |
+| Materialien und      |  | Termineinhaltung bei |  | Losungen fur         |
+| sorgfaltige          |  | jedem Projekt        |  | Ihre Wunsche         |
+| Ausfuhrung           |  |                      |  |                      |
++----------------------+  +----------------------+  +----------------------+
+
+VISUAL-KARTE
++----------------------------------------------------------------------------+
+|                                                                            |
+|                          [Baum-Icon]                                       |
+|                                                                            |
+|                   LEIDENSCHAFT FUR GARTEN                                  |
+|                                                                            |
+|     Wir lieben was wir tun - und das sieht man in jedem Projekt.           |
+|                                                                            |
+|                   (Animierte Ringe im Hintergrund)                         |
++----------------------------------------------------------------------------+
+
+
+==============================================================================
+                         KONTAKT SEKTION (#contact)
+==============================================================================
+
++----------------------------------------------------------------------------+
+|                         KONTAKTIEREN SIE UNS                               |
+|                                                                            |
+|  Wir freuen uns auf Ihre Anfrage. Lassen Sie uns gemeinsam                 |
+|  Ihren Traumgarten realisieren.                                            |
++----------------------------------------------------------------------------+
+
++----------------------------------+  +--------------------------------------+
+|                                  |  |                                      |
+|  KONTAKTINFORMATIONEN            |  |         KONTAKTFORMULAR              |
+|                                  |  |                                      |
+|  [Telefon] 0157 507 20150        |  |  +--------------------------------+  |
+|                                  |  |  | Name *                         |  |
+|  [Email] hulboj-garten-          |  |  +--------------------------------+  |
+|          hausmeisterservice      |  |                                      |
+|          @gmx.net                |  |  +--------------------------------+  |
+|                                  |  |  | E-Mail *                       |  |
+|  [Standort] Sprengerstr. 4/2,   |  |  +--------------------------------+   |
+|             71686 Remseck        |  |                                      |
+|             am Neckar            |  |  +--------------------------------+  |
+|                                  |  |  | Woran sind Sie interessiert?   |  |
+|                                  |  |  |   - Pflasterarbeiten           |  |
+|                                  |  |  |   - Gartengestaltung           |  |
+|                                  |  |  |   - Zaunbau                    |  |
+|                                  |  |  |   - Gartenpflege               |  |
+|                                  |  |  +--------------------------------+  |
+|                                  |  |                                      |
+|                                  |  |  +--------------------------------+  |
+|                                  |  |  | Ihre Nachricht *               |  |
+|                                  |  |  |                                |  |
+|                                  |  |  |                                |  |
+|                                  |  |  +--------------------------------+  |
+|                                  |  |                                      |
+|                                  |  |        [   ABSENDEN   ]              |
+|                                  |  |                                      |
+|                                  |  |  Mit dem Absenden stimmen Sie        |
+|                                  |  |  unserer Datenschutzerklarung zu.    |
++----------------------------------+  +--------------------------------------+
+
+
+==============================================================================
+                                 FOOTER
+==============================================================================
+
++----------------------------------------------------------------------------+
+|                                                                            |
+|  [LOGO]                  LEISTUNGEN        KONTAKT         RECHTLICHES     |
+|  Sylwester Hulboj        Pflasterarbeiten  0157 507 20150  Impressum       |
+|                          Gartengestaltung  E-Mail senden   Datenschutz     |
+|  Garten &                Zaunbau                                           |
+|  Hausmeisterservice      Gartenpflege                                      |
+|                                                                            |
+|  Sprengerstr. 4/2                                                          |
+|  71686 Remseck am Neckar                                                   |
+|                                                                            |
++----------------------------------------------------------------------------+
+|                                                                            |
+|         (c) 2026 Sylwester Hulboj. Alle Rechte vorbehalten.                |
+|                                                                            |
++----------------------------------------------------------------------------+
+
+
+==============================================================================
+                          ZUSATZLICHE SEITEN
+==============================================================================
+
+IMPRESSUM (/impressum)
++----------------------------------------------------------------------------+
+|  Angaben gemas SS5 TMG, Kontaktdaten, Umsatzsteuer-ID, etc.                |
++----------------------------------------------------------------------------+
+
+DATENSCHUTZ (/datenschutz)
++----------------------------------------------------------------------------+
+|  Datenschutzerklarung, Cookie-Richtlinie, Rechte der Nutzer               |
++----------------------------------------------------------------------------+
+
