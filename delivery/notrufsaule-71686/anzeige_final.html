@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Anzeige Sylwester Gartenbau</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /*
+    Print-Format: 80mm × 28mm
+    Screen-Preview: 960px × 336px (12× scale)
+  */
+  .anzeige {
+    width: 960px;
+    height: 336px;
+    background: #fff;
+    border: 2.5px solid #000;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  }
+
+  /* ─── LINKE SPALTE: Logo ─── */
+  .col-logo {
+    width: 270px;
+    min-width: 270px;
+    border-right: 2.5px solid #000;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px;
+  }
+
+  .col-logo img {
+    width: 240px;
+    height: 240px;
+    object-fit: contain;
+    filter: grayscale(100%) contrast(1.1);
+  }
+
+  /* ─── RECHTE SPALTE: Content ─── */
+  .col-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* Name-Streifen oben */
+  .row-name {
+    background: #000;
+    color: #fff;
+    padding: 7px 16px 6px 16px;
+    display: flex;
+    align-items: baseline;
+    gap: 0;
+  }
+
+  .name-text {
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+
+  /* Haupt-Service */
+  .row-main {
+    padding: 8px 16px 4px 16px;
+    flex: 0;
+  }
+
+  .main-title {
+    font-size: 39px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.8px;
+    line-height: 1.0;
+    color: #000;
+    white-space: nowrap;
+  }
+
+  /* Trennlinie */
+  .divider {
+    height: 2px;
+    background: #000;
+    margin: 4px 16px;
+  }
+
+  /* Service + Kontakt */
+  .row-info {
+    padding: 0px 16px 6px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .services {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #000;
+    line-height: 1.02;
+  }
+
+  .contact-line {
+    font-size: 16.5px;
+    color: #000;
+    letter-spacing: 0;
+    line-height: 1.02;
+  }
+
+  /* Tel-Footer */
+  .row-footer {
+    background: #000;
+    color: #fff;
+    padding: 6px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .tel-num {
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+  }
+
+  .tel-label {
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 4px;
+    letter-spacing: 1px;
+    opacity: 0.85;
+  }
+
+  .web {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    opacity: 0.95;
+  }
+</style>
+</head>
+<body>
+<div class="anzeige">
+
+  <!-- Logo -->
+  <div class="col-logo">
+    <img src="logo_color.png" alt="Sylwester Aussenaigen Bau">
+  </div>
+
+  <!-- Content -->
+  <div class="col-content">
+
+    <div class="row-name">
+      <span class="name-text">Sylwester Hulboj</span>
+    </div>
+
+    <div class="row-main">
+      <div class="main-title">Gartenbau-Gartengestaltung</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="row-info">
+      <div class="services">Gartenpflege &nbsp;·&nbsp; Anlagenpflege &nbsp;·&nbsp; Pflasterarbeiten &nbsp;·&nbsp; Rollrasen</div>
+      <div class="contact-line">Sprengerstr. 4/2 &nbsp;·&nbsp; 71686 Remseck am Neckar</div>
+      <div class="contact-line">sylwester-gartenbau@web.de</div>
+    </div>
+
+    <div class="row-footer">
+      <div>
+        <span class="tel-label">TEL.</span>
+        <span class="tel-num">0157-50720150</span>
+      </div>
+      <div class="web">www.sylwester-gartenbau.de</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
