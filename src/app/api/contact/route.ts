@@ -116,13 +116,19 @@ export async function POST(request: Request) {
             // In development without API key, just return success
             if (process.env.NODE_ENV === 'development') {
                 console.info('[DEV] Contact form submission:', { name: safeName, email: safeEmail, service });
+                return NextResponse.json(
+                    { success: true, message: 'Ihre Nachricht wurde erfolgreich gesendet!' },
+                    {
+                        status: 200,
+                        headers: { 'X-RateLimit-Remaining': String(remaining) },
+                    }
+                );
             }
+            // Outside development a missing key means the message cannot be delivered
+            console.error('Contact form error: RESEND_API_KEY is not configured');
             return NextResponse.json(
-                { success: true, message: 'Ihre Nachricht wurde erfolgreich gesendet!' },
-                {
-                    status: 200,
-                    headers: { 'X-RateLimit-Remaining': String(remaining) },
-                }
+                { error: 'Fehler beim Senden der Nachricht. Bitte versuchen Sie es später erneut.' },
+                { status: 500 }
             );
         }
 
